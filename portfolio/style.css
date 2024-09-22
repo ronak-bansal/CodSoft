@@ -1,0 +1,114 @@
+/* Color variables */
+:root {
+    --white-color: #fff;
+    --bg-color: #fff;
+    --gray-color: #ccc;
+  }
+  
+  /* Changing background color */
+  body {
+    background: var(--bg-color) !important;
+  }
+  
+  /* Changing link color */
+  .nav-item .nav-link {
+    color: var(--white-color);
+  }
+  
+  /* Hero section background image */
+  .hero {
+    height: 100vh;
+    background-image: url("ths.jpg");
+    background-repeat: no-repeat;
+    background-position: 60% 0%;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
+  #skills i {
+    height: 100px;
+    width: 100px;
+  }
+  
+  #portfolio img {
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  #about .img,
+  #about img,
+  .hire-text h2 {
+    position: relative;
+  }
+  
+  /* Timeline background line */
+  #about .img::before {
+    content: "";
+    left: 50%;
+    width: 4px;
+    position: absolute;
+    height: calc(100% + 140px);
+    background: var(--gray-color);
+  }
+  
+  #about img,
+  #about .hire-text h2 {
+    width: 140px;
+  }
+  
+  #about .hire-text h2 {
+    height: 140px;
+  }
+  
+  .social-icons a {
+    width: 41px;
+    height: 41px;
+  }
+  
+  footer .social-icons a {
+    width: 31px;
+    height: 31px;
+  }
+  
+  #cv img {
+    width: 231px;
+  }
+  
+  /* Contact section background image */
+  #contact {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-image: url("contact-bg.jpeg");
+  }
+  
+  @media screen and (max-width: 990px) {
+    #skills .card {
+      width: calc(100% / 2 - 10px) !important;
+    }
+  }
+  
+  @media screen and (max-width: 668px) {
+    #skills .card,
+    #portfolio .card-wrapper {
+      width: 100% !important;
+    }
+   #about .hire-text h2 {
+     height: 70px;
+     width: 70px;
+   }
+  }
+  #download-btn {
+    background-color: #007bff; /* Blue background color */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Cursor changes to pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+#download-btn:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}

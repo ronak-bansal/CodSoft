@@ -1,0 +1,60 @@
+/* Import Google font - Poppins */
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"); */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  }
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #50535b;
+}
+.container-one {
+  position: relative;
+  max-width: 300px;
+  width: 100%;
+  border-radius: 11px;
+  padding: 10px 19px 19px;
+  background: #262424;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+.display {
+  height: 81px;
+  width: 100%;
+  outline: none;
+  border: none;
+  text-align: right;
+  margin-bottom: 11px;
+  font-size: 24px;
+  color: #000e1a;
+  pointer-events: none;
+}
+.buttons-all {
+  display: grid;
+  grid-gap: 11px;
+  grid-template-columns: repeat(4, 1fr);
+}
+.buttons-all button {
+  padding: 11px;
+  border-radius: 7px;
+  border: none;
+  font-size: 19px;
+  cursor: pointer;
+  background-color: #db900f;
+}
+.buttons-all button:active {
+  transform: scale(0.99);
+}
+.operators {
+  color: #010305;
+}
+input{
+  background-color: #e9ecf5;
+}
